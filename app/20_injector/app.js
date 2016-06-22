@@ -11,7 +11,7 @@
 		$scope.increment = function() {
 			var service = $injector.get($scope.myService);
 			service.value++;
-			$log.debug('value', service.value);
+			$log.debug('value', $scope.myService, service.value);
 		};
 
 		$scope.value = function() {

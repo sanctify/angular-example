@@ -4,9 +4,9 @@
 
 
 	var Fx = 0;
-	var Fy = -9.81;
+	var Fy = -105.81;
 	var dt = 10;
-	var k = 0.005;
+	var k = 0.05;
 	var total = 20;
 
 	var Particule = function(obj) {
@@ -76,7 +76,7 @@
 
 		var sequence = Promise.resolve();
 
-		for (var n = 0; n < 600; n++) {
+		for (var n = 0; n < 60000; n++) {
 			sequence = sequence.then(function() {
 				return move();
 			});

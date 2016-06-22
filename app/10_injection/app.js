@@ -6,16 +6,12 @@
 	myModule.service('hello', ['$window', function($window) {
 		return {
 			welcome: function(name) {
-				$window.alert('Hello ' + name + '!');
+				//$window.alert('Hello ' + name + '!');
+				$window.alert('Hello ducon !');
 			}
 		};
 	}]);
-
-	var app = angular.module('myApp', ['myModule']);
-	app.controller('MyController', ['$scope', 'hello', function($scope, hello) {
-		$scope.sayHello = function(name) {
-			hello.welcome(name);
-			console.log(name);
-		};
-	}]);
 })();
+
+
+
